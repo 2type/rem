@@ -1,0 +1,28 @@
+{
+  "name": "lessrem",
+  "version": "1.0.0",
+  "description": "在 less 中简单的使用 rem | The use of simple rem in less,fuck!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fast-flow/lessrem.git"
+  },
+  "keywords": [
+    "less",
+    "rem"
+  ],
+  "author": "nimojs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fast-flow/lessrem/issues"
+  },
+  "homepage": "https://github.com/fast-flow/lessrem#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "less-plugin-functions": "0.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+.demo {
+  width: 20rem;
+  height: 3.125rem;
+  box-shadow: 0.34375rem 0.6875rem 1.03125rem pink;
+  background: #eee;
+}

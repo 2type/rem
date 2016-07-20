@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dist/demo.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <script>
+    // https://github.com/jieyou/rem_layout
+    !function(a,b,c){function q(){var d=Math.min((o?e[h]().width:f.innerWidth)/(a/b),c);d!=p&&(k.innerHTML="html{font-size:"+d+"px!important;"+n+"}",p=d)}function r(){clearTimeout(l),l=setTimeout(q,500)}var l,d=document,e=d.documentElement,f=window,g="addEventListener",h="getBoundingClientRect",i="pageshow",j=d.head||d.getElementsByTagName("HEAD")[0],k=d.createElement("STYLE"),m="text-size-adjust:100%;",n="-webkit-"+m+"-moz-"+m+"-ms-"+m+"-o-"+m+m,o=h in e,p=null;a=a||320,b=b||16,c=c||32,j.appendChild(k),d[g]("DOMContentLoaded",q,!1),"on"+i in f?f[g](i,function(a){a.persisted&&r()},!1):f[g]("load",r,!1),f[g]("resize",r,!1),q()}(
+    	320, // 不要改动！设置设计稿基准宽度
+    	16, // 不要改动！设置开发时的被除数（见HOW TO USE第4步） 在设计稿基准宽度为320时最好设置为16（在在设计稿基准宽度为其他值时等比放大，如640时设置为32等）。因为浏览器默认的值就是16，这样代码失效或尚未起效时，不会有布局问题
+    	32 // 不要改动！设置最大根元素font-size，请注意这是一个css像素值，而非物理像素值。它的作用是，当用户用非常宽的屏幕（pad、pc）访问页面时，不至于使得根元素的font-size超过这个值，使得布局非常难看。见图“show/wide_max_rem.jpg”
+        // 设计稿的宽度通过 rem.less 设置，不要修改这里的参数
+    );
+    </script>
+    <title>lessrem</title>
+</head>
+<body style="margin:0;" >
+<h1><a href="https://github.com/fast-flow/lessrem/">lessrem</a></h1>
+
+<div class="demo"></div>
+
+<img src="data:image/png;base64,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" alt="">
+
+<br />
+less
+<pre>
+// 关键需要 less-plugin-functions 来给 less 提供自定义函数支持
+// You need less-plugin-functions
+.function {
+    .rem(@size) {
+        // 640 是设计稿宽度
+        // 640 is psd width
+        return: @size/(640/320*16)+0rem;
+    }
+}
+</pre>
+
+css
+<pre>
+@import "./rem";
+.demo {
+    width:rem(640);
+    height:rem(100);
+    box-shadow: rem(11) rem(22) rem(33) pink;
+    background: #eee;
+}
+</pre>
+
+</body>
+</html>
