@@ -22,10 +22,12 @@
 }
 ```
 
+[less-plugin-functions](https://www.npmjs.com/package/less-plugin-functions)
+
 **/less/rem.less**
 ```less
 // 关键需要 less-plugin-functions 来给 less 提供自定义函数支持
-// You need less-plugin-functions
+// You need less-plugin-functions  https://www.npmjs.com/package/less-plugin-functions
 .function {
     .rem(@size) {
         // 640 是设计稿宽度
