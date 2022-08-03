@@ -32,9 +32,9 @@ less
 // You need less-plugin-functions
 .function {
     .rem(@size) {
-        // 640 是设计稿宽度
-        // 640 is psd width
-        return: @size/(640/320*16)+0rem;
+        // 750 是设计稿宽度
+        // 750 is psd width
+        return: @size/(750/320*16)+0rem;
     }
 }
 </pre>
@@ -43,9 +43,9 @@ css
 <pre>
 @import "./rem";
 .demo {
-    width:rem(640);
-    height:rem(100);
-    box-shadow: rem(11) rem(22) rem(33) pink;
+    width:rem(750);
+    height:rem(114);
+    box-shadow: rem(13) rem(25) rem(37.62) pink;
     background: #eee;
 }
 </pre>
